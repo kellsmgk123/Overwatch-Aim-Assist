@@ -1,3 +1,4 @@
+
 /*
  *Overwatch Aim Assitance
  *Copyright (C) 2016  Juan Xuereb
@@ -30,7 +31,8 @@ Mouse::Mouse(int captureWidth, int captureHeight, const float sensitivity)
 }
 
 /* Calculates actual coordinates for mouse movement based on sensitivity and a constant. */
-void Mouse::calibrateCoordinates(int &x, int &y)
+void Mouse::
+calibrateCoordinates(int &x, int &y)
 {
 	if (abs(x) < 5)
 		x = 0;
